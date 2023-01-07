@@ -1,0 +1,19 @@
+
+@keyframes fade {
+  0% {    opacity: 0;  }
+  50% {   opacity: 1;  }
+  100% {  opacity: 0;  }
+}
+#configurator:before {
+  content: var(--content,"Calculating your browser's hash rate power!");
+  position: absolute;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  animation: fade 2s;
+  animation-iteration-count: 10;
+}
+
